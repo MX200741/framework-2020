@@ -57,6 +57,7 @@ public class Robot extends TimedRobot {
         rightPrimary = initController(driveRightPrimary);
         rightFollower = initController(driveRightFollower);
         rightFollower.follow(rightPrimary);
+        DifferentialDrive m_robotDrive = new DifferentialDrive(leftPrimary, rightPrimary);
     }
 
     /**
